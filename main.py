@@ -74,6 +74,8 @@ def parallel_plot(x1:np.ndarray,y1:np.ndarray,x2:np.ndarray,y2:np.ndarray,
         ax2.plot(x2, y2)
         ax2.set(xlabel=x2label, ylabel=y2label)
         return fig
+    else:
+        return None
 
 def log_plot(x:np.ndarray,y:np.ndarray,xlabel:str,ylabel:str,title:str,log_axis:str):
     """Funkcja służąca do tworzenia wykresów ze skalami logarytmicznymi. 
